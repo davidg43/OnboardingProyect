@@ -1,0 +1,144 @@
+body{
+    background-color:#000b1f;
+    color: #F7EBEC;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "description description description"
+    "picture1 . picture2"
+    "section section section"
+    "footer footer footer";
+
+}
+
+.nombre{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: 50px;
+    width: 60%;
+    margin-left: 50px;
+    justify-content: flex-start;
+}
+
+
+
+.navbar{
+    background-color: #1E1E24 ;
+    height: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+
+}
+
+
+.navbar ul{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:50%;
+    align-items: center;
+    
+}
+
+.navbar li{
+    flex-direction: row;
+
+}
+
+.navbar a{
+    
+    color: #F7EBEC;
+    text-decoration: none;
+} 
+
+.contenido{
+    padding: 10px;
+    margin-top:80px;
+    grid-area: description;
+    border-style: solid;
+    border-color: #F7EBEC ;
+    text-align: center;
+    justify-content: center;
+    background-color: #8D5B4C;
+}
+
+article img{
+    height: 230px;
+    width: 300px;
+    border-radius: 45%;
+
+}
+.picture1, .picture2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+ .picture1{
+    grid-area: picture1;
+}
+ .picture2{
+    grid-area: picture2;
+}
+
+section{
+    background-color: white;
+    grid-area: section;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+section figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+    width: 180px;
+}
+
+p{
+    text-align: center;
+    justify-self: center;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #8D5B4C;
+    border-style: solid;
+    border-color: #F7EBEC ;
+    text-align: center;
+    justify-content: center;
+    background-color: #8D5B4C;
+
+}
+nav img{
+    margin-left: 30px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+footer{
+    display: grid;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input{
+    height: 30px;
+}
